@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/viewEndGame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_370sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="visible"
+        >
+
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/papyrus2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/close"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:text="X"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:background="@drawable/circlebackground"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/layout_winner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/_37sdp">
+
+                    <ImageView
+                        android:id="@+id/profile_win"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        />
+
+                    <TextView
+                        android:id="@+id/nick_win"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_30sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        app:layout_constraintTop_toBottomOf="@+id/profile_win"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        />
+
+                    <TextView
+                        android:id="@+id/points"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_30sdp"
+                        android:text="@string/points"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="@+id/profile_win"
+                        app:layout_constraintRight_toRightOf="@+id/sword_win"
+                        app:layout_constraintBottom_toTopOf="@+id/points_win"
+                        />
+                    
+                    <TextView
+                        android:id="@+id/points_win"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_30sdp"
+                        app:layout_constraintTop_toBottomOf="@+id/points"
+                        app:layout_constraintLeft_toLeftOf="@+id/profile_win"
+                        app:layout_constraintRight_toRightOf="@+id/sword_win"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+                    
+                    <ImageView
+                        android:id="@+id/sword_win"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:src="@drawable/win"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        />
+
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/layout_loser"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_winner">
+
+                    <ImageView
+                        android:id="@+id/profile_lose"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        />
+
+                    <TextView
+                        android:id="@+id/nick_lose"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_30sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        app:layout_constraintTop_toBottomOf="@+id/profile_lose"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        />
+
+                    <TextView
+                        android:id="@+id/points2"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_30sdp"
+                        android:text="@string/points"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="@+id/profile_lose"
+                        app:layout_constraintRight_toRightOf="@+id/sword_lose"
+                        app:layout_constraintBottom_toTopOf="@+id/points_lose"
+                        />
+
+                    <TextView
+                        android:id="@+id/points_lose"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_30sdp"
+                        app:layout_constraintTop_toBottomOf="@+id/points2"
+                        app:layout_constraintLeft_toLeftOf="@+id/profile_lose"
+                        app:layout_constraintRight_toRightOf="@+id/sword_lose"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+
+                    <ImageView
+                        android:id="@+id/sword_lose"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:src="@drawable/lose"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        />
+                </android.support.constraint.ConstraintLayout>
+
+                
+
+
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

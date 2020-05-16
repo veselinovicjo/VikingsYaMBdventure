@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">VikingsYaMBdventure</string>
+    <string name="welcome">Welcome</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_rang_list">RangList</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings related to LoginActivity -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!--Strings related to Firebase login-->
+    <string name="action_sign_in_short">Register</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remove user</string>
+    <string name="new_pass">New Password</string>
+    <string name="title_activity_profile">Vikings\' YaMBdventure</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">Not a member? Get registered in Vikings\' YaMBdventure now!</string>
+    <string name="btn_link_to_login">Already registered. Log me in!</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+
+    <!--Strings related to in game texts-->
+    <string name="maxiyamb">"Maxi Yamb"</string>
+    <string name="miniyamb">"Mini Yamb"</string>
+
+    <string name="radio_male"> "Male"</string>
+    <string name="radio_female"> "Female"</string>
+
+    <string name="sex"> <b>"Sex:" </b> </string>
+    <string name="coins"> <b>"Coins:" </b> </string>
+    <string name="total_games"> <b>"Total games:" </b> </string>
+    <string name="wins"> <b>"Wins:" </b> </string>
+    <string name="rang"> <b>"Rang:" </b> </string>
+    <string name="points">"points:"</string>
+    <string name="exitgame">"Are you sure you want to exit the game?"</string>
+
+    <string name="txt_eraser">"If score is entered in the field by mistake, it undoes the action."</string>
+    <string name="txt_coins">"Coins are given as a reward after victory and, also, collected during the game. It can be spent on helps."</string>
+    <string name="txt_help1">"Five ones are inserted in the field '1' in Down or Hand column. (100 coins)"</string>
+    <string name="txt_help2">"Value 30 is inserted in the field 'max' or value 5 in min field 'min' in Hand column(150 coins)"</string>
+    <string name="txt_help3">"Yamb with sixths are inserted in Up or Hand column. (200 coins)"</string>
+
+    <string name="game_rules">
+        <b>  "Game Rules" </b>
+    </string>
+
+    <string name="game_rules1">
+
+        <b><i> "Vikings’ YaMBdventure</i></b> is multiplayer dice game, involving lots of luck, but also a decent amount of strategy and tactics. \n"
+        "You have a possibility of choosing mini or maxi yamb. They differ in number of columns – more columns more difficult game. \n"
+
+        <b>"\n Rolling dice \n "</b>
+        "Player takes turn rolling six dice. After each roll, he chooses which dice (if any) to keep, "
+        "and which to re-roll. The player may re-roll some or all of the dice up to three times on a turn. "
+        "After ends his turn, player scores his best matching result by combining only five dices. \n"
+
+        <b>"\n Column down \n "</b>
+        "In the first column, the order of scoring is from top to bottom. \n"
+
+         <b>"\n Column up \n " </b>
+        "The second column is opposite to the first, the order of scoring is from bottom to top. \n"
+
+        <b>"\n Free column \n "</b>
+        "In the third column, you can score in any order. \n"
+
+        <b>"\n Column "H" \n "</b>
+        "In the fourth column you can score only after your first roll of dices. \n"
+
+         <b>"\n Column from center \n " </b>
+        "In the fifth column you can score from field max to the top and from the field min to the bottom of column. \n"
+
+        <b>"\n Column from beging and end \n " </b>
+        "In the sixth column you can score from top to the field max and from bottom to field min. \n"
+
+        <b>"\n Rows "1", "2", "3", "4", "5" and "6"\n "</b>
+        "First six rows are simple combinations - 1, 2, 3, etc. Score is the sum of all ones, twos, threes, etc., depends what you are collecting. \n"
+
+    </string>
+    <string name="game_rules2">
+        " = 4 points \n"
+        <b>"\n First sum row \n "</b>
+        "In this row you score the sum of the first six rows. If the sum is greater than 60, you will be awarded with 30 bonus points. \n"
+
+        <b>"\n Max row \n "</b>
+        "The aim of this row is to score as much as possible points. \n"
+    </string>
+    <string name="game_rules3">
+        " = 27 points \n"
+        <b>"\n Min row \n "</b>
+        "The aim of this row is to score as less as possible points. \n"
+    </string>
+    <string name="game_rules4">
+        " = 8 points \n"
+        <b>"\n Min-max sum row \n "</b>
+        "The sum in this row is calculated by the formula (Max - Min) x (number of ones in first row)."
+        "From examples above it is (27 - 8) x 4 = 19 x 4 = 76. \n"
+
+        <b>"\n "S" - Straight row \n "</b>
+        "Combinations 1, 2, 3, 4, 5 or 2, 3, 4, 5, 6. If you get one of these combinations by rolling all dice at once – the score is 66. "
+        "If you keep some of the dice, and some of them roll again – the score is 56. And if you roll some of the dice three times, the score is 46. \n"
+    </string>
+    <string name="game_rules5">
+        <b> "\n "T" - Three of the kind \n "</b>
+        "3 equal dice. For each Poker you will be awarded with 20 bonus points. \n"
+    </string>
+    <string name="game_rules6">
+        " = 15 + 20 = 35 points \n"
+        <b>"\n "F" - Full house row \n "</b>
+        "Combinations of 3 equal dice and other 2 equal dice. For each Full House you will be awarded with 30 bonus points. \n"
+    </string>
+    <string name="game_rules7">
+        " = 28 + 30 = 58 points \n"
+        <b>"\n "P" - Poker row \n "</b>
+        "4 equal dice. For each Poker you will be awarded with 40 bonus points. \n"
+    </string>
+    <string name="game_rules8">
+        " = 16 + 40 = 56 points \n"
+        <b>"\n "Y" - Yamb row \n "</b>
+        "This is the most valuable field in the game. You need to collect 5 equal dices. For each Yamb you will be awarded with 50 bonus points.\n"
+    </string>
+    <string name="game_rules9">
+        " = 30 + 50 = 80 points \n"
+        <b>"\n Third sum column \n "</b>
+        "The sum of the previous 4 rows (S + F + P + Y). \n"
+    </string>
+
+    <string name="congrats">"Congratulations! Points that you have earn:"</string>
+    <string name="protoproba">protoProba</string>
+
+</resources>

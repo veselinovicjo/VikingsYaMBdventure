@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcg"
+    tools:context="com.vikinzi.vikingsyambdventure.activities.MiniSingle">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/yamb_paper"
+        android:layout_width="@dimen/_228sdp"
+        android:layout_height="@dimen/_376sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layout_dices"
+        >
+        <!-- First column - images -->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_img"
+            android:layout_height="@dimen/_376sdp"
+            android:layout_width="@dimen/_38sdp">
+
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:background="@drawable/img_logo"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <ImageView
+                android:id="@+id/img_1"
+                android:background="@drawable/img_1"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_logo"/>
+
+            <ImageView
+                android:id="@+id/img_2"
+                android:background="@drawable/img_2"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_1"/>
+
+            <ImageView
+                android:id="@+id/img_3"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:background="@drawable/img_3"
+                app:layout_constraintTop_toBottomOf="@id/img_2"/>
+
+            <ImageView
+                android:id="@+id/img_4"
+                android:background="@drawable/img_4"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_3"/>
+
+            <ImageView
+                android:id="@+id/img_5"
+                android:background="@drawable/img_5"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_4" />
+
+            <ImageView
+                android:id="@+id/img_6"
+                android:background="@drawable/img_6"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_5"/>
+
+            <ImageView
+                android:id="@+id/img_sum1"
+                android:background="@drawable/img_sum"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_6"/>
+
+            <ImageView
+                android:id="@+id/img_max"
+                android:background="@drawable/img_max"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_sum1"/>
+
+            <ImageView
+                android:id="@+id/img_min"
+                android:background="@drawable/img_min"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_max"/>
+
+            <ImageView
+                android:id="@+id/img_sum2"
+                android:background="@drawable/img_sum"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_min"/>
+
+            <ImageView
+                android:id="@+id/img_straight"
+                android:background="@drawable/img_straight"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_sum2"/>
+
+            <ImageView
+                android:id="@+id/img_three"
+                android:background="@drawable/img_three"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_straight"/>
+
+            <ImageView
+                android:id="@+id/img_full"
+                android:background="@drawable/img_full"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_three"/>
+
+            <ImageView
+                android:id="@+id/img_poker"
+                android:background="@drawable/img_poker"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_full"/>
+
+            <ImageView
+                android:id="@+id/img_yamb"
+                android:background="@drawable/img_yamb"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_poker"/>
+
+            <ImageView
+                android:id="@+id/img_sum3"
+                android:background="@drawable/img_sum"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_yamb"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <!-- 2. column - down -->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_down"
+            android:layout_height="@dimen/_376sdp"
+            android:layout_width="@dimen/_38sdp"
+            app:layout_constraintLeft_toRightOf="@+id/layout_img">
+
+            <ImageView
+                android:id="@+id/img_down"
+                android:background="@drawable/img_down"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/down_1"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_down"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/down_2"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/down_1"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/down_3"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/down_2"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/down_4"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/down_3"/>
+
+            <TextView
+                android:id="@+id/down_5"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/down_4"/>
+
+            <TextView
+                android:id="@+id/down_6"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/down_5"/>
+
+            <TextView
+                android:id="@+id/down_sum1"
+                android:background="@drawable/sum_style"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/down_6"/>
+
+            <TextView
+                android:id="@+id/down_max"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/down_sum1"/>
+
+            <TextView
+                android:id="@+id/down_min"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/down_max"/>
+
+            <TextView
+                android:id="@+id/down_sum2"
+                android:background="@drawable/sum_style"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/down_min"/>
+
+            <TextView
+                android:id="@+id/down_straight"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/down_sum2"/>
+
+            <TextView
+                android:id="@+id/down_three"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/down_straight"/>
+
+            <TextView
+                android:id="@+id/down_full"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/down_three"/>
+
+            <TextView
+                android:id="@+id/down_poker"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/down_full"/>
+
+            <TextView
+                android:id="@+id/down_yamb"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/down_poker"/>
+
+            <TextView
+                android:id="@+id/down_sum3"
+                android:background="@drawable/sum_style"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/down_yamb"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <!-- 3. column - up -->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_up"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_376sdp"
+            tools:layout_editor_absoluteX="96dp"
+            app:layout_constraintLeft_toRightOf="@+id/layout_down">
+
+            <ImageView
+                android:id="@+id/img_up"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/img_up"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/up_1"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/img_up" />
+
+            <TextView
+                android:id="@+id/up_2"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_1" />
+
+            <TextView
+                android:id="@+id/up_3"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_2" />
+
+            <TextView
+                android:id="@+id/up_4"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_3" />
+
+            <TextView
+                android:id="@+id/up_5"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_4" />
+
+            <TextView
+                android:id="@+id/up_6"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_5" />
+
+            <TextView
+                android:id="@+id/up_sum1"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/sum_style"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_6" />
+
+            <TextView
+                android:id="@+id/up_max"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_sum1" />
+
+            <TextView
+                android:id="@+id/up_min"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_max" />
+
+            <TextView
+                android:id="@+id/up_sum2"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/sum_style"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_min" />
+
+            <TextView
+                android:id="@+id/up_straight"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_sum2" />
+
+            <TextView
+                android:id="@+id/up_three"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_straight" />
+
+            <TextView
+                android:id="@+id/up_full"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_three" />
+
+            <TextView
+                android:id="@+id/up_poker"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_full" />
+
+            <TextView
+                android:id="@+id/up_yamb"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_poker" />
+
+            <TextView
+                android:id="@+id/up_sum3"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/sum_style"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/up_yamb" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <!-- 4. column - free -->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_free"
+            android:layout_height="@dimen/_376sdp"
+            android:layout_width="@dimen/_38sdp"
+            app:layout_constraintLeft_toRightOf="@+id/layout_up">
+
+            <ImageView
+                android:id="@+id/img_free"
+                android:background="@drawable/img_free"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/free_1"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/img_free"/>
+
+            <TextView
+                android:id="@+id/free_2"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_1"/>
+
+            <TextView
+                android:id="@+id/free_3"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_2"/>
+
+            <TextView
+                android:id="@+id/free_4"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_3"/>
+
+            <TextView
+                android:id="@+id/free_5"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_4"/>
+
+            <TextView
+                android:id="@+id/free_6"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_5"/>
+
+            <TextView
+                android:id="@+id/free_sum1"
+                android:background="@drawable/sum_style"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_6"/>
+
+            <TextView
+                android:id="@+id/free_max"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_sum1"/>
+
+            <TextView
+                android:id="@+id/free_min"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_max"/>
+
+            <TextView
+                android:id="@+id/free_sum2"
+                android:background="@drawable/sum_style"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_min"/>
+
+            <TextView
+                android:id="@+id/free_straight"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_sum2"/>
+
+            <TextView
+                android:id="@+id/free_three"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_straight"/>
+
+            <TextView
+                android:id="@+id/free_full"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_three"/>
+
+            <TextView
+                android:id="@+id/free_poker"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_full"/>
+
+            <TextView
+                android:id="@+id/free_yamb"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_poker"/>
+
+            <TextView
+                android:id="@+id/free_sum3"
+                android:background="@drawable/sum_style"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/free_yamb"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <!-- 5. column - hand -->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_hand"
+            android:layout_height="@dimen/_376sdp"
+            android:layout_width="@dimen/_38sdp"
+            app:layout_constraintLeft_toRightOf="@+id/layout_free"
+            >
+
+            <ImageView
+                android:id="@+id/img_hand"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/img_hand"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/hand_1"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/img_hand"/>
+
+            <TextView
+                android:id="@+id/hand_2"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_1"/>
+
+            <TextView
+                android:id="@+id/hand_3"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_2"/>
+
+            <TextView
+                android:id="@+id/hand_4"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_3"/>
+
+            <TextView
+                android:id="@+id/hand_5"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_4"/>
+
+            <TextView
+                android:id="@+id/hand_6"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_5"/>
+
+            <TextView
+                android:id="@+id/hand_sum1"
+                android:background="@drawable/sum_style"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_6"/>
+
+            <TextView
+                android:id="@+id/hand_max"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_sum1"/>
+
+            <TextView
+                android:id="@+id/hand_min"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_max"/>
+
+            <TextView
+                android:id="@+id/hand_sum2"
+                android:background="@drawable/sum_style"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_min"/>
+
+            <TextView
+                android:id="@+id/hand_straight"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_sum2"/>
+
+            <TextView
+                android:id="@+id/hand_three"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_straight"/>
+
+            <TextView
+                android:id="@+id/hand_full"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_three"/>
+
+            <TextView
+                android:id="@+id/hand_poker"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_full"/>
+
+            <TextView
+                android:id="@+id/hand_yamb"
+                android:background="@drawable/border"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_poker"/>
+
+            <TextView
+                android:id="@+id/hand_sum3"
+                android:background="@drawable/sum_style"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/hand_yamb"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <!-- 6. column - sum and helps -->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_yamb"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_376sdp"
+            app:layout_constraintLeft_toRightOf="@+id/layout_hand">
+
+            <ImageView
+                android:id="@+id/img_help"
+                android:background="@drawable/img_help"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp" />
+
+            <ImageView
+                android:id="@+id/yamb_help1"
+                android:background="@drawable/yamb_help1"
+                android:layout_height="@dimen/_44sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/img_help"/>
+
+            <ImageView
+                android:id="@+id/yamb_coins"
+                android:background="@drawable/yamb_coins"
+                android:layout_height="@dimen/_89sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/yamb_help1"/>
+
+            <TextView
+                android:id="@+id/txt_coins"
+                android:layout_height="@dimen/_44sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/yamb_coins"/>
+
+            <TextView
+                android:id="@+id/yamb_sum1"
+                android:background="@drawable/sum_style"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/yamb_coins"/>
+
+            <ImageView
+                android:id="@+id/yamb_help2"
+                android:background="@drawable/yamb_help2"
+                android:layout_height="@dimen/_44sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/yamb_sum1"/>
+
+            <TextView
+                android:id="@+id/yamb_sum2"
+                android:background="@drawable/sum_style"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/yamb_help2"/>
+
+            <ImageView
+                android:id="@+id/yamb_eraser"
+                android:background="@drawable/yamb_eraser"
+                android:layout_height="@dimen/_66sdp"
+                android:layout_width="@dimen/_38sdp"
+                app:layout_constraintTop_toBottomOf="@id/yamb_sum2"/>
+
+            <ImageView
+                android:id="@+id/yamb_help3"
+                android:background="@drawable/yamb_help3"
+                android:layout_height="@dimen/_44sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:text="1999"
+                app:layout_constraintTop_toBottomOf="@id/yamb_eraser"/>
+
+            <TextView
+                android:id="@+id/yamb_sum3"
+                android:background="@drawable/sum_style"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_width="@dimen/_38sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/yamb_help3"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Footer for dices and etc -->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_dices"
+        android:layout_width="@dimen/_135sdp"
+        android:layout_height="@dimen/_90sdp"
+        app:layout_constraintTop_toBottomOf="@id/yamb_paper"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/play"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/dice1"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:src="@drawable/unknown"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/dice4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dice2"/>
+        <ImageView
+            android:id="@+id/dice2"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:src="@drawable/unknown"
+            app:layout_constraintLeft_toRightOf="@id/dice1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/dice5"
+            app:layout_constraintRight_toLeftOf="@+id/dice3"/>
+        <ImageView
+            android:id="@+id/dice3"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:src="@drawable/unknown"
+            app:layout_constraintLeft_toRightOf="@id/dice2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/dice6"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <ImageView
+            android:id="@+id/dice4"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:src="@drawable/unknown"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dice1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/dice5"
+            />
+        <ImageView
+            android:id="@+id/dice5"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:src="@drawable/unknown"
+            app:layout_constraintTop_toBottomOf="@id/dice2"
+            app:layout_constraintLeft_toRightOf="@id/dice4"
+            app:layout_constraintRight_toLeftOf="@id/dice6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <ImageView
+            android:id="@+id/dice6"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:src="@drawable/unknown"
+            app:layout_constraintTop_toBottomOf="@id/dice3"
+            app:layout_constraintLeft_toRightOf="@id/dice5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/play"
+        app:layout_constraintLeft_toRightOf="@+id/layout_dices"
+        app:layout_constraintRight_toLeftOf="@+id/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yamb_paper"/>
+
+
+    <TextView
+        android:id="@+id/yamb_sumtotal"
+        android:background="@drawable/sum_style"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_width="@dimen/_76sdp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="@id/yamb_paper"
+        app:layout_constraintTop_toBottomOf="@+id/yamb_paper"
+        app:layout_constraintBottom_toTopOf="@+id/profile"
+        />
+    <ImageView
+        android:id="@+id/img_sum4"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/img_sum1"
+        app:layout_constraintLeft_toLeftOf="@+id/yamb_sumtotal"
+        app:layout_constraintBottom_toBottomOf="@+id/yamb_sumtotal"
+        app:layout_constraintTop_toTopOf="@+id/yamb_sumtotal"/>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        app:layout_constraintRight_toRightOf="@id/yamb_sumtotal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yamb_sumtotal"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_width="@dimen/_76sdp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/play"
+        app:layout_constraintLeft_toRightOf="@+id/layout_dices"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/profile"/>
+</android.support.constraint.ConstraintLayout>

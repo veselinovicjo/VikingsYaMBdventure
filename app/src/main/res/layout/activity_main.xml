@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    tools:context="com.vikinzi.vikingsyambdventure.activities.MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vguideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vguideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vguideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vguideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/hguideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/hguideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/hguideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/hguideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <ImageButton
+        android:id="@+id/singleplayer"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/btn_single_player"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintLeft_toLeftOf="@id/vguideline1"
+        app:layout_constraintTop_toTopOf="@id/hguideline1" />
+
+
+    <ImageButton
+        android:id="@+id/gamerules"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/btn_gamerules"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintLeft_toLeftOf="@id/vguideline1"
+        app:layout_constraintTop_toBottomOf="@id/singleplayer" />
+
+
+    <ImageButton
+        android:id="@+id/properties"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/btn_properties"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintLeft_toLeftOf="@id/vguideline1"
+        app:layout_constraintTop_toBottomOf="@id/gamerules" />
+
+    <ImageButton
+        android:id="@+id/newgame"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:background="@drawable/btn_newgame"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintLeft_toRightOf="@id/vguideline3"
+        app:layout_constraintRight_toRightOf="@id/vguideline2"
+        app:layout_constraintTop_toTopOf="@id/hguideline2" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:contentDescription="@string/action_settings"
+        app:layout_constraintLeft_toRightOf="@id/vguideline1"
+        app:layout_constraintTop_toTopOf="@id/hguideline4" />
+
+</android.support.constraint.ConstraintLayout>

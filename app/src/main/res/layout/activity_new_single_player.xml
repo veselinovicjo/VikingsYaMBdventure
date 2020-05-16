@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcg_newgame"
+    tools:context="com.vikinzi.vikingsyambdventure.activities.NewSinglePlayerActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vguideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/hguideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.58" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/hguideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.51" />
+
+    <TextView
+        android:id="@+id/txt_single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Single player"
+        android:textSize="@dimen/_40sdp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <ImageView
+        android:id="@+id/viking_mini"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_450sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:contentDescription="@string/action_settings"
+        android:src="@drawable/viking_mini"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/viking_maxi"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_450sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:contentDescription="@string/action_settings"
+        android:src="@drawable/viking_maxi"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/miniyamb"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:text="@string/miniyamb"
+        android:textSize="@dimen/_35sdp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/hguideline1"
+        app:layout_constraintLeft_toLeftOf="@id/viking_mini"
+        app:layout_constraintRight_toRightOf="@id/viking_mini"/>
+
+    <TextView
+        android:id="@+id/maxiyamb"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:text="@string/maxiyamb"
+        android:textSize="@dimen/_35sdp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/hguideline2"
+        app:layout_constraintLeft_toLeftOf="@id/viking_maxi"
+        app:layout_constraintRight_toRightOf="@id/viking_maxi"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/viewHelp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#af000000"
+        android:visibility="gone">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_370sdp"
+            android:background="@drawable/papyrus_t"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/close"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:text="X"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:background="@drawable/circlebackground"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+            <ImageView
+                android:id="@+id/img_eraser"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_45sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/img_eraser"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/txt_eraser"
+                android:text="@string/txt_eraser"
+                android:textSize="@dimen/_15sdp"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_45sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/img_eraser"/>
+
+            <ImageView
+                android:id="@+id/img_coins"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/img_coins"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_eraser"/>
+
+            <TextView
+                android:id="@+id/txt_coins"
+                android:text="@string/txt_coins"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintLeft_toRightOf="@+id/img_coins"
+                app:layout_constraintTop_toBottomOf="@+id/txt_eraser"/>
+
+            <ImageView
+                android:id="@+id/img_help1"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/img_help1"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_coins"/>
+
+            <TextView
+                android:id="@+id/txt_help1"
+                android:text="@string/txt_help1"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintLeft_toRightOf="@+id/img_help1"
+                app:layout_constraintTop_toBottomOf="@+id/txt_coins"/>
+
+            <ImageView
+                android:id="@+id/img_help2"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/img_help2"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_help1"/>
+
+            <TextView
+                android:id="@+id/txt_help2"
+                android:text="@string/txt_help2"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintLeft_toRightOf="@+id/img_help2"
+                app:layout_constraintTop_toBottomOf="@+id/txt_help1"/>
+
+            <ImageView
+                android:id="@+id/img_help3"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/img_help3"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_help2"/>
+
+            <TextView
+                android:id="@+id/txt_help3"
+                android:text="@string/txt_help3"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintLeft_toRightOf="@+id/img_help3"
+                app:layout_constraintTop_toBottomOf="@+id/txt_help2"/>
+
+
+
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

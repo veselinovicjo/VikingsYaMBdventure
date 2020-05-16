@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "242644711027",
+    "firebase_url": "https://vikingsyambdventure.firebaseio.com",
+    "project_id": "vikingsyambdventure",
+    "storage_bucket": "vikingsyambdventure.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242644711027:android:f36cf1d131ff0cfb",
+        "android_client_info": {
+          "package_name": "com.vikinzi.vikingsyambdventure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242644711027-2m9n9lt0j1u3utojb14or4kcosl6tqhr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vikinzi.vikingsyambdventure",
+            "certificate_hash": "48aee0bfc7cb84f98efad0fdc98c05109f259e87"
+          }
+        },
+        {
+          "client_id": "242644711027-kvgc23v7l8kc14i85qgk1b18ih1n98in.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "242644711027-kvgc23v7l8kc14i85qgk1b18ih1n98in.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYuOM3oyHuJKQakb787JOInKjCf_2Zlfg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242644711027-kvgc23v7l8kc14i85qgk1b18ih1n98in.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
